@@ -1,0 +1,51 @@
+.box {
+    background-color: gray;
+    width: 300px;
+    height: 200px;
+    padding: 15px;
+    position: relative;
+    left: -300px;
+    transition: left 500ms;
+}
+
+.box:hover {
+    left: 0;
+    .item::before{
+        transform: rotate(405deg);
+       }
+    .menu {
+        opacity: 0;
+    }
+}
+
+.link {
+    color: white;
+    transition: color 500ms;
+}
+
+
+
+.item::before {
+content: "";
+background-color: orange;
+width: 20px;
+height: 20px;
+border: 1px solid black;
+display: inline-block;
+align-items: center;
+margin-right: 14px;
+transition: transform 1000ms;
+}
+
+.link:hover {
+    color: orange;
+}
+
+
+.menu {
+    transform: rotate(270deg);
+position: relative;
+bottom: 150px;
+right: -150px;
+transition: 200ms;
+}
